@@ -1,0 +1,2 @@
+# ScalaHub
+scala projects
