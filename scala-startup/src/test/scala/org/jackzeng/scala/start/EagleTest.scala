@@ -1,6 +1,6 @@
 package org.jackzeng.scala.start
 
-import org.jackzeng.scala.start.lang.Eagle
+import org.jackzeng.scala.start.langfeature.Eagle
 
 /**
   * Created by zengxj on 17-10-18

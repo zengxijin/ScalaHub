@@ -1,4 +1,4 @@
-package org.jackzeng.scala.start.lang
+package org.jackzeng.scala.start.langfeature
 
 /**
   * Created by zengxj on 17-10-18

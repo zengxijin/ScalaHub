@@ -1,4 +1,4 @@
-package org.jackzeng.scala.start.lang
+package org.jackzeng.scala.start.langfeature
 
 /** abstract class抽象类的方法可以部分实现,也可以部分不实现
   * 可以包含成员变量
