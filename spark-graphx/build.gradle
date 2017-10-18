@@ -1,0 +1,35 @@
+apply from: "config.gradle"
+
+apply plugin: 'idea'
+
+subprojects {
+
+    group 'org.jackzeng'
+    version '1.0-SNAPSHOT'
+
+    apply plugin: 'java'
+    apply plugin: 'scala'
+    apply plugin: 'application'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        maven { url "https://jitpack.io" }
+        maven {
+            url "http://repository.cloudera.com/artifactory/cloudera-repos/"
+        }
+        mavenCentral()
+    }
+
+    dependencies {
+        compile rootProject.ext.dependencies["spark-core_2.11"],
+                rootProject.ext.dependencies["spark-graphx_2.11"],
+                rootProject.ext.dependencies["spark-sql_2.11"],
+                rootProject.ext.dependencies["spark-hive_2.11"],
+                rootProject.ext.dependencies["spark-csv_2.11"]
+        testCompile rootProject.ext.dependencies["junit"]
+    }
+
+}

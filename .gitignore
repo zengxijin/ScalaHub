@@ -1,0 +1,33 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij IDEA
+*.iml
+*.iws
+.idea/
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Build
+*build/
+out/
+
+# Gradle
+.gradle/
+
+# Lucene
+api/luceneDir/
+luceneDir/
+
+# classes folder
+classes
+
+*.log
+

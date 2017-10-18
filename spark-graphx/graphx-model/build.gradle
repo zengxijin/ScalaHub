@@ -1,0 +1,5 @@
+
+
+dependencies {
+    compile rootProject.ext.dependencies["spring-context"]
+}
