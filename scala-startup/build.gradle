@@ -9,12 +9,14 @@ task "createDirs" << {
 repositories{  
     mavenCentral()  
     mavenLocal()  
-}  
+}
+
+scalaVersion = "2.10.5"
   
 dependencies{  
-    compile "org.scala-lang:scala-library:2.10.4"  
-    compile "org.scala-lang:scala-compiler:2.10.4"  
-    compile "org.scala-lang:scala-reflect:2.10.4"  
+    compile "org.scala-lang:scala-library:${scalaVersion}"
+    compile "org.scala-lang:scala-compiler:${scalaVersion}"
+    compile "org.scala-lang:scala-reflect:${scalaVersion}"
     testCompile "junit:junit:4.11"  
 }  
   

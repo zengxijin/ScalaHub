@@ -7,6 +7,9 @@ object HelloWorldObject {
 
   def main(args: Array[String]): Unit = {
     println("hi, jack welcome to scala")
+
+    val helloWorld = new HelloWorld
+    helloWorld.main(null)
   }
 
 }
